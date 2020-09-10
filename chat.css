@@ -1,0 +1,126 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 2.3fr;
+    grid-template-rows: 1fr;
+}
+
+.status-bar{
+    background-color: #611f69;
+    color: white;
+    text-align: center;
+}
+
+.status-bar h1{
+    font-size: 2.2rem;
+}
+
+.status-bar input{
+    margin-left: 3px;
+    margin-right: 3px;
+    margin: 5px 3px 2px 3px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.btn{
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    color: #611f69;
+}
+
+.workroom button,.connect button{
+    margin-top: 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    padding: 8px;
+    color: #611f69;
+    font-weight: bold;
+}
+
+.workroom h2, .friend-list h2{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.workroom ul, .friend-list ul{
+    list-style-type: none;
+    text-align: start;
+}
+
+.workroom li, .friend-list li{
+    margin: 5px 0;
+}
+
+.chat-bar{
+    background-color: #f7f7f7;
+}
+
+.chat-bar h1{
+    text-align: center;
+    color: #611f69;
+    font-size: 2.2rem;
+}
+
+.active-user {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin: 5px 0px 5px 0px;
+    color: #611f69;
+    box-shadow: 0 0 10px #611f69;
+}
+
+.active-user h2{
+    margin-left: 10px;
+}
+
+.active-user img{
+    margin: 5px 10px 5px 0 ;
+}
+
+.messages ul{
+    list-style-type: none;
+    
+}
+
+.send-container{
+    position: fixed;
+    padding-bottom: 30px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.send-container input{
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px gray;
+}
+
+.send-container button{
+    margin-right: 10px;
+    border: none;
+    color: #611f69;
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px gray;
+}
+
+/* @media only screen and (max-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 0.1fr 2.9fr;
+    }
+} */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./chat.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="status-bar">
+                <h1>Status Bar</h1>
+                <input type="text" class="search" placeholder="Enter Keyword to search"><br>
+                <input class="btn" type="submit" value="Search">
+                <div class="connect">
+                    <button>+ Start a New Chat</button>
+                </div>
+                <div class="friend-list">
+                    <h2>Friends Connected</h2>
+                    <ul>
+                        <li>Maavia</li>
+                        <li>Asghar</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+                <div class="workroom">
+                    <button class="btn">+ Creat New Workroom</button>
+                    <h2>Present Workroom</h2>
+                    <ul>
+                        <li>Maavia</li>
+                        <li>Asghar</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chat-bar">
+                <h1>Chat Bar</h1>
+                <div class="active-user">
+                    <h2>Name</h2>
+                    <img src="./download.jpeg" height="80px" width="80px" alt="Profile Pic">
+                </div>
+                <div class="messages">
+                    <ul>
+                        <li>Messages</li>
+                        <li>Current</li>
+                        <li>Available</li>
+                    </ul>
+                </div>
+                <form class="send-container">
+                    <input type="text" placeholder="Your Message">
+                    <button type="submit" value="Send">Send</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="./chat.js"></script>
+</body>
+
+</html>
