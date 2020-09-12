@@ -1,0 +1,25 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chat.js",
+  "scripts": {
+    "chatStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaaviaAsghar4/chat-app.git"
+  },
+  "author": "Maavia Asghar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaaviaAsghar4/chat-app/issues"
+  },
+  "homepage": "https://github.com/MaaviaAsghar4/chat-app#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

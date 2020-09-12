@@ -87,10 +87,17 @@ main{
     margin: 5px 10px 5px 0 ;
 }
 
-.messages ul{
-    list-style-type: none;
-    
+.message-list{
+    margin: 20px 10px 10px 10px;
+    box-shadow: 0 0 10px gray;
+    padding: 10px 10px 10px 10px;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #611f69;
+    font-weight: bold;
 }
+
+
 
 .send-container{
     position: fixed;

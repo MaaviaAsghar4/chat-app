@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
     <link rel="stylesheet" href="./chat.css">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./chat.js"></script>
 </head>
 
 <body>
@@ -42,23 +44,20 @@
                     <h2>Name</h2>
                     <img src="./download.jpeg" height="80px" width="80px" alt="Profile Pic">
                 </div>
-                <div class="messages">
-                    <ul>
-                        <li>Messages</li>
-                        <li>Current</li>
-                        <li>Available</li>
-                    </ul>
+                <div class="messages" id="message">
+
                 </div>
-                <form class="send-container">
-                    <input type="text" placeholder="Your Message">
-                    <button type="submit" value="Send">Send</button>
-                </form>
+                <div>
+                    <form class="send-container" id="send">
+                        <input type="text" placeholder="Your Message" id="message-input">
+                        <button type="submit" value="Send" id="message-send">Send</button>
+                    </form>
+                </div>
             </div>
         </main>
     </div>
 
 
-    <script src="./chat.js"></script>
 </body>
 
 </html>
