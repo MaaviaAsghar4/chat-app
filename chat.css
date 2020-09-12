@@ -58,6 +58,12 @@ main{
 
 .workroom li, .friend-list li{
     margin: 5px 0;
+    font-weight: bold;
+}
+
+.fade{
+    opacity: 0.5;
+    text-decoration: line-through;
 }
 
 .chat-bar{
@@ -97,7 +103,15 @@ main{
     font-weight: bold;
 }
 
+.friend-list {
+    height: 120px;
+    overflow-y: auto;
+}
 
+.messages{
+    height: 380px;
+    overflow-y: auto;
+}
 
 .send-container{
     position: fixed;

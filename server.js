@@ -10,4 +10,8 @@ io.on("connection", socket => {
     socket.on('send-message', message => {
         socket.broadcast.emit("chat-messages", {message: message, name: user[socket.id]});
     })
+    socket.on("disconnect", () =>{
+        socket.broadcast.emit("user-disconnected",user[socket.id])
+        delete user[socket.id]
+    })
 })
