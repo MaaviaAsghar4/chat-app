@@ -4,24 +4,30 @@ const formMessage = document.getElementById('send');
 const messageInput = document.getElementById('message-input');
 const sendMessage = document.getElementById('message-send');
 const activeFriends = document.getElementById('friend-connected');
+const dispname = document.getElementById("dispname")
+const dispimage = document.getElementById("dispimage")
 
-const name = prompt("Enter Your Name");
+let userName = localStorage.getItem('dispName');
+let userImage = localStorage.getItem('dispImage');
+dispname.innerText = userName;
+dispimage.src = userImage;
+
 displayMessage("You Joined");
-socket.emit("new-user", name);
-
+socket.emit("new-user", userName);
+socket.emit('user-image', userImage);
 
 
 socket.on("chat-messages", data =>{
-    displayMessage(`${data.name}: ${data.message}`);
+    displayMessage(`${data.userName}: ${data.message}`);
 })
 
-socket.on("user-connected", name =>{
-    displayMessage(`${name} connected`);
-    activeFriend(name)
+socket.on("user-connected", userName =>{
+    displayMessage(`${userName} connected`);
+    activeFriend(userName)
 })
 
-socket.on("user-disconnected", name =>{
-    displayMessage(`${name} disconnected`);
+socket.on("user-disconnected", userName =>{
+    displayMessage(`${userName} disconnected`);
 })
 
 formMessage.addEventListener("submit", e => {
@@ -35,12 +41,12 @@ formMessage.addEventListener("submit", e => {
 function displayMessage(message) {
     const container = document.createElement("div");
     container.setAttribute("class", "message-list")
-    container.innerText = message;
+    container.innerHTML = message;
     containerMessage.appendChild(container);
 }
 
-function activeFriend(name) {
+function activeFriend(userName) {
     const friendName = document.createElement("li")
-    friendName.innerText = name;
+    friendName.innerText = userName;
     activeFriends.appendChild(friendName);
 }

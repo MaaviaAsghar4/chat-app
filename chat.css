@@ -36,7 +36,7 @@ main{
     color: #611f69;
 }
 
-.workroom button,.connect button{
+.connect button{
     margin-top: 20px;
     font-size: 1rem;
     border: none;
@@ -46,17 +46,17 @@ main{
     font-weight: bold;
 }
 
-.workroom h2, .friend-list h2{
+.friend-list h2{
     margin-top: 20px;
     font-size: 1.2rem;
 }
 
-.workroom ul, .friend-list ul{
+.friend-list ul{
     list-style-type: none;
     text-align: start;
 }
 
-.workroom li, .friend-list li{
+.friend-list li{
     margin: 5px 0;
     font-weight: bold;
 }
@@ -104,7 +104,6 @@ main{
 }
 
 .friend-list {
-    height: 120px;
     overflow-y: auto;
 }
 

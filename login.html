@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Login</title>
+  <link rel="stylesheet" href=./login.css>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyB8nsiJ7j1MztTWaZBVP7BOsmcFiqr9AD8",
+      authDomain: "maaviaportfolio.firebaseapp.com",
+      databaseURL: "https://maaviaportfolio.firebaseio.com",
+      projectId: "maaviaportfolio",
+      storageBucket: "maaviaportfolio.appspot.com",
+      messagingSenderId: "135996589464",
+      appId: "1:135996589464:web:764b3aa63f058e076dd7ed",
+      measurementId: "G-L91K518PE2"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+  <div class="login">
+    <input type="email" id="email"><br>
+    <input type="password" id="password"><br>
+    <button class="validate" onclick="signUp()">Sign Up</button><br>
+    <button class="validate" onclick="signIn()">Sign In</button><br>
+    <button class="google" onclick="signInG()">Sign In With Google</button><br>
+    <button class="facebook" onclick="signInF()">Sign In with Facebook</button><br>
+  </div>
+
+
+  <script src="./login.js"></script>
+</body>
+
+</html>
